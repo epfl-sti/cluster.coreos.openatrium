@@ -70,18 +70,19 @@ ENV MIGRATE_SITES_TO false
 ## Site Installation 
 ENV ACCOUNT_NAME admin
 ENV ACCOUNT_PASS insecurepass
-ENV ACCOUNT_MAIL admin@example.com
+ENV ACCOUNT_MAIL nicolas.borboen@epfl.ch
 ENV SITE_NAME Open Atrium
-ENV SITE_MAIL admin@example.com
+ENV SITE_MAIL nicolas.borboen@epfl.ch
 ENV INSTALL_SITE true
 
 ## DB
 ENV AUTO_DB_SETTINGS true
 
 ## sSMTP
-ENV SSMTP_ROOT example.address@gmail.com
-ENV SSMTP_MAILHUB smtp.gmail.com:587
-ENV SSMTP_HOSTNAME example.address@gmail.com
+ENV SSMTP_ROOT nicolas.borboen@epfl.ch
+#ENV SSMTP_MAILHUB smtp.gmail.com:587
+ENV SSMTP_MAILHUB mail.epfl.ch
+ENV SSMTP_HOSTNAME nicolas.borboen@epfl.ch
 ENV SSMTP_USE_STARTTLS YES
 ENV SSMTP_AUTH_USER example.address
 ENV SSMTP_AUTH_PASS emailpassword
